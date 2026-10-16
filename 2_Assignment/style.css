@@ -1,0 +1,271 @@
+/* COLORS */
+
+:root {
+    --aqua: #A8DADC;
+    --mint: #B7E4C7;
+    --pink: #FFCAD4;
+    --lavender: #CDB4DB;
+    --yellow: #FFE5A5;
+    --white: #F9F9F7;
+    --dark: #263238;
+}
+
+
+/* BASIC */
+
+body {
+    background-color: var(--white);
+    color: var(--dark);
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    border-bottom: 3px solid var(--aqua);
+}
+
+.navbar-brand {
+    color: var(--dark);
+}
+
+.nav-link {
+    color: var(--dark);
+}
+
+.nav-link:hover {
+    color: #765f83;
+}
+
+
+/* HOME / ABOUT */
+
+.about-page {
+    background-color: var(--aqua);
+    padding: 80px 0;
+}
+
+.about-page h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.text-purple {
+    color: #765f83;
+}
+
+
+/* BADGE */
+
+.badge {
+    background-color: var(--yellow) !important;
+    color: var(--dark) !important;
+}
+
+
+/* CARDS */
+
+.value-card {
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--pink);
+}
+
+.value-card:nth-child(2) {
+    background-color: var(--mint);
+}
+
+.value-card:nth-child(3) {
+    background-color: var(--yellow);
+}
+
+
+/* GALLERY */
+
+.gallery-page {
+    background-color: var(--mint);
+    padding: 80px 0;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+
+/* CONTACT */
+
+.contact-page {
+    background-color: var(--pink);
+    padding: 80px 0;
+}
+
+.contact-info {
+    background-color: var(--aqua);
+    padding: 30px;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.contact-form {
+    background-color: var(--lavender);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+
+/* CTA */
+
+.bg-lavender {
+    background-color: var(--lavender);
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 25px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/* BUTTON */
+
+.btn-dark {
+    background-color: var(--dark);
+    border-color: var(--dark);
+}
+
+.btn-dark:hover {
+    background-color: var(--yellow);
+    color: var(--dark);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .about-page h1 {
+        font-size: 35px;
+    }
+
+}
+
+/* ================= ABOUT PAGE ================= */
+
+.about-page {
+    background-color: var(--aqua);
+    padding: 70px 0;
+}
+
+.about-page h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.about-page h1 span {
+    color: #765f83;
+}
+
+.about-page p {
+    line-height: 1.7;
+}
+
+.about-card {
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.about-card:nth-child(1) {
+    background-color: var(--aqua);
+}
+
+.about-card:nth-child(2) {
+    background-color: var(--mint);
+}
+
+.about-card:nth-child(3) {
+    background-color: var(--pink);
+}
+
+.about-card i {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.about-cta {
+    background-color: var(--lavender);
+    padding: 60px 0;
+}
+
+
+/* ================= ROOMS PAGE ================= */
+
+.rooms-page {
+    background-color: var(--mint);
+    padding: 70px 0;
+}
+
+.rooms-page h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.rooms-page h1 span {
+    color: #765f83;
+}
+
+.room-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+}
+
+.room-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.room-card h3 {
+    font-size: 22px;
+}
+
+.room-card h5 {
+    font-weight: bold;
+}
+
+.rooms-cta {
+    background-color: var(--yellow);
+    padding: 60px 0;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .about-page h1,
+    .rooms-page h1 {
+        font-size: 35px;
+    }
+
+    .room-card img {
+        height: 200px;
+    }
+
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300;400;500;600&display=swap');
+
+
+:root{
+    --cream:#F7F3EE;
+    --brown:#403936;
+    --pink:#D6B5B0;
+    --sage:#A9B5A1;
+    --gold:#B69A68;
+    --white:#FFFFFF;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background:var(--cream);
+    color:var(--brown);
+    line-height:1.7;
+}
+
+h1,h2,h3,h4,h5{
+    font-family:'DM Serif Display', serif;
+}
+
+a{
+    text-decoration:none;
+}
+
+.section-padding{
+    padding:80px 0;
+}
+
+/* Navbar */
+.navbar{
+    background:var(--cream);
+}
+
+.navbar-brand{
+    font-family:'DM Serif Display', serif;
+    font-size:1.8rem;
+    color:var(--brown);
+}
+
+.nav-link{
+    color:var(--brown);
+    margin-left:15px;
+}
+
+.nav-link:hover{
+    color:var(--gold);
+}
+
+/* Hero */
+.hero{
+    background:url('../images/resort.jpg') center/cover no-repeat;
+    height:90vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    color:white;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:3.5rem;
+}
+
+.custom-btn{
+    background:var(--gold);
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:30px;
+}
+
+.custom-btn:hover{
+    background:var(--brown);
+    color:white;
+}
+
+/* Cards */
+.feature-card,
+.room-card{
+    background:white;
+    border:none;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.feature-card:hover,
+.room-card:hover{
+    transform:translateY(-5px);
+}
+
+/* CTA */
+.cta{
+    background:var(--sage);
+    color:white;
+    text-align:center;
+    border-radius:20px;
+    padding:60px 30px;
+}
+
+/* Footer */
+footer{
+    background:var(--brown);
+    color:white;
+    padding:50px 0 20px;
+}
+
+footer a{
+    color:white;
+}
+
+footer a:hover{
+    color:var(--pink);
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .hero{
+        height:70vh;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+}
